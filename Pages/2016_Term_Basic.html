@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>2016 Term Basic</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Hide this line for IE (needed for Firefox and others) -->
+    <![if !IE]>
+    <link rel="icon" href="http://home.ubalt.edu/id86mp66/Images/mapper_favicon.png" type="image/png" />
+    <![endif]>
+    <!-- This is needed for IE -->
+    <link rel="shortcut icon" href="http://home.ubalt.edu/id86mp66/Images/mapper_favicon.ico" type="image/ico" />
+
+	
+	<!-- Latest compiled and minified CSS  -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="2016_Term.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+var buttonText = [];
+var pressedButton = 1;
+
+// Atlas Maps
+var atlasMaps = [1067,1059,1065,1075,1066,1079,1101,1106];
+
+function makeButton( party1, party2, headline, mapNum, mapType, mapAxis, mapDegrees){
+	this.party1=party1;
+	this.party2=party2;
+	this.headline=headline;
+	this.mapNum=mapNum;
+	this.mapType=mapType;
+	this.mapAxis=mapAxis;
+	this.mapDegrees= mapDegrees;
+}
+
+function PopulateButtons(){
+
+	// Put in Button Data by Hand
+
+	// Create HTML for id="buttons_div"
+	var numButtons = atlasMaps.length;
+	var buttonsPerRow = 4; // hard-coded for now
+
+	var numRows = Math.floor(numButtons/buttonsPerRow);
+	var colSize = Math.floor(12/buttonsPerRow);
+	var buttonsInLastRow = numButtons%buttonsPerRow;
+	var currentButton=1;
+
+	while (numRows>=0){
+		var dynamicHTML= "<div class=\"row\">";
+		
+		var buttonsThisRow;
+		if (numRows==0){
+			buttonsThisRow=buttonsInLastRow;
+		}
+		else{
+			buttonsThisRow=buttonsPerRow;
+		}
+
+		for (var i = 1; i <=buttonsThisRow; i++) {
+			dynamicHTML+="<div class=\"col-md-"+colSize+"\"><button id=\"button_"+currentButton+"\"></button></div>";
+			currentButton++;
+		}
+		dynamicHTML+="</div><br><br>";
+
+		$("#buttons_div").append(dynamicHTML);
+		numRows--;
+	} // while
+
+
+	// Adding Explanatory Text
+	var explanatoryText = "<p id=\"homepage\"><a id=\"homepage_link\" class=\"external\" href=\"http://law.ubalt.edu/faculty/scotus-mapping/index.cfm\">This page created by the Supreme Court Mapping Project</a></p>";
+
+	$("#buttons_div").append(explanatoryText);
+
+
+	// Now populate button text
+	for (var i = 0; i<= atlasMaps.length - 1; i++) {
+		
+		var buttonHTML = "<strong> Map " + (i+1) + "</strong><br>";
+		var buttonId = "#button_" + (i+1);
+
+		$(buttonId).html(buttonHTML);
+	}
+}
+
+function populateMap(buttonNumber){
+
+//	var mapType=buttonText[buttonNumber-1].mapType;
+//	var mapAxis=buttonText[buttonNumber-1].mapAxis;
+//	var mapDegrees=buttonText[buttonNumber-1].mapDegrees;
+//	var mapNumber=buttonText[buttonNumber-1].mapNum;
+
+	var mapNumber=atlasMaps[buttonNumber-1];
+	var mapHTML;
+
+	mapHTML="<iframe height=\"500\" width=\"95%\" src=\"https://www.courtlistener.com/visualizations/scotus-mapper/"+mapNumber+"/embed/"+"\" frameborder=\"0\" allowfullscreen></iframe>";
+
+
+	$("#map_div").html(mapHTML);
+
+	//Change Button Colors First Revert Current Pressed
+	var buttonIdString = "#button_"+pressedButton; 
+	$(buttonIdString).css("background-color", "#d1d1e0");
+
+	//Then Change New Pressed
+	buttonIdString = "#button_"+buttonNumber;
+	$(buttonIdString).css("background-color", "#ff9999");
+
+	pressedButton = buttonNumber;
+
+}
+
+/**
+ * Returns a random integer between min (inclusive) and max (inclusive)
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomStartMap(){
+	var i=buttonText.length;
+	return getRandomInt(1,i);
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+    <div class="container-fluid">
+
+		<div class ="row"> <!-- Title Page -->
+			<div class="col-md-12">
+				<h1>2016 Term Maps - Draft</h1>
+			</div>
+		</div>
+
+
+		<div class="row">
+
+			<div id="buttons_div" class="col-md-6">
+				<!-- BUTTONS! This will be autopopulated-->
+				
+			</div> <!-- left col-md-5 BUTTONS DIV!-->
+
+
+			<div id="map_div" class="col-md-6">
+				
+
+			</div> <!-- right col-md-6 MAP DIV!-->
+
+        </div> <!-- top row -->
+    	
+    	
+    </div> <!-- top div container fluid-->
+ 
+
+	<script type="text/javascript">
+		
+		// Main Code
+		$(document).ready(function(){
+
+			PopulateButtons();
+			
+			populateMap(randomStartMap());
+
+			$("button").click(function(){
+
+				var buttonIdString= this.id;
+				var sliceLength= buttonIdString.length-1-buttonIdString.indexOf("_");
+				var buttonNum= Number(buttonIdString.slice(-sliceLength));
+
+				populateMap(buttonNum);
+			});
+		});
+	</script>
+
+</body>
+</html>

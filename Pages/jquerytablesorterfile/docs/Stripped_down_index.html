@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+	<title>Colin's Attempted Stripped-down Tablesorter</title>
+	<link rel="stylesheet" href="css/jq.css" type="text/css" media="print, projection, screen" />
+	<link rel="stylesheet" href="../themes/blue/style.css" type="text/css" media="print, projection, screen" />
+
+<!-- It seems like I can just use the CDN JQuery
+	<script type="text/javascript" src="../jquery-latest.js"></script>
+-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<script type="text/javascript" src="../jquery.tablesorter.js"></script>
+
+	<!-- What happens if I blank out docs and chili? Seems to be OK
+	<script type="text/javascript" src="js/chili/chili-1.8b.js"></script>
+	<script type="text/javascript" src="js/docs.js"></script>
+-->
+
+	<script type="text/javascript">
+	$(function() {		
+		$("#tablesorter-demo").tablesorter({sortList:[[0,0],[2,1]], widgets: ['zebra']});
+		$("#options").tablesorter({sortList: [[0,0]], headers: { 3:{sorter: false}, 4:{sorter: false}}});
+	});	
+	</script>
+</head>
+
+<!-- GOALS
+	XX Isolate table only
+	Change data so that it is like 2014 Term - All 13 Columns?
+	XX See if I can get links working
+	
+-->
+
+<body>
+<!-- Get Rid of Banner (pretty cool effect)
+<div id="banner">	
+	<h1>table<em>sorter</em></h1>
+	<h2>Documentation</h2>
+	<h3>Flexible client-side table sorting</h3>
+	<a href="#"></a>
+</div>
+-->
+
+<div id="main">
+	
+<!-- Get rid of author, license, etc. info
+	<div class="digg">
+		<script src="http://images.del.icio.us/static/js/blogbadge.js"></script>
+	</div>
+	
+	<p>
+	  	<strong>Author:</strong> <a class="external" href="http://lovepeacenukes.com">Christian Bach</a><br />
+		<strong>Version:</strong> 2.0.5 (<a href="../changelog">changelog</a>)<br />
+		<strong>Licence:</strong> 
+		Dual licensed under <a class="external" href="http://www.opensource.org/licenses/mit-license.php">MIT</a>
+		or <a class="external" href="http://www.opensource.org/licenses/gpl-license.php">GPL</a> licenses.
+	</p>
+	
+	<p class="tip update">
+		<em>Update!</em> New version!, and the tablesorter docs are now available in russian, head over to <a class="external" href="http://tablesorter.ru/docs/">tablesorter.ru</a>
+	</p>
+	
+	<p class="tip">
+		<em>Helping out!</em> If you like tablesorter and you're feeling generous, take a look at my <a  class="external" href="http://www.amazon.com/gp/registry/wishlist/3VAOWCL63NEA6/ref=wl_web/">Amazon Wish List</a>
+	</p>
+
+
+	<p>Comments and love letters can be sent to: <span class="email">christian at tablesorter dot com</span>.</p>
+	
+	<p> </p>
+
+ ** End Get Rid of Author -->
+
+	<!--
+	<p class="tip">
+		<em>Help!</em> keep tablesorter.com up and running. If you like tablesorter, have a couple of bucks over or just feel like it. Please donate.</p>
+	</p>
+	
+	<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<input type="hidden" name="cmd" value="_xclick">
+	<input type="hidden" name="business" value="christian.bach@polyester.se">
+	<input type="hidden" name="item_name" value="Tablesorter donation">
+	<input type="hidden" name="currency_code" value="USD">
+	<input type="hidden" name="amount" value="10.00">
+	<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+	</form>
+	-->
+	
+	
+	
+	<a name="Contents"></a>
+	<h1>Contents</h1>
+	<ol>
+		<li><a href="#Introduction">Introduction</a></li>
+		<li><a href="#2014Data">2014 Term Network Data</a></li>
+		<li><a href="#More-Info">More Information</a></li>
+		
+	</ol>
+
+	<a name="Introduction"></a>
+	<h1>Introduction</h1>
+	<p>
+		<!-- Getting rid of tablesorter intro text - note the external href dance
+		tablesorter is a <a class="external" href="http://jquery.com">jQuery</a> plugin for turning a
+	  	standard HTML table with THEAD and TBODY tags into a sortable table without page refreshes.  
+	  	tablesorter can successfully parse and sort many types of data including linked data in a cell.  	  	
+		It has many useful features including:
+	-->
+		This table represents a complete set of citation networks for each of the 71 cases decided in the 2014 term as identified by the <a class="external" href="http://scdb.wustl.edu/analysisCaseListing.php?sid=1501-TEARDROP-3854">Supreme Court Database </a>. The features of this dataset include:
+	</p>
+  	
+  	<ul>
+  		<!-- Getting rid of tablesorter generic features (looks like you can't have embedded commas)
+  		
+  		<li>Multi-column sorting</li>
+  		<li>Parsers for sorting text, URIs, integers, currency, floats, IP addresses, dates (ISO, long and short formats), time.  <a href="example-parsers.html">Add your own easily</a></li>
+  	
+  		<li>Support secondary "hidden" sorting (e.g., maintain alphabetical sort when sorting on other criteria)</li>
+  		<li>Extensibility via <a href="example-widgets.html">widget system</a></li>
+  		<li>Cross-browser: IE 6.0+, FF 2+, Safari 2.0+, Opera 9.0+</li>	
+		<li>Small code size</li>
+		-->
+
+		<li>Network origins</li>
+		<li>Network size and age</li>
+		<li>Degree of dissent</li>
+		<li>Links to maps, and <a href="http://www.scotusblog.com/case-files/terms/ot2014/">SCOTUSBlog</a> entries</li>
+
+  	</ul>
+  
+	<a name="2014Data"></a>
+	<h1>2014 Term Network Data</h1>
+
+	<table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1">
+		<thead>
+			<tr>
+				<th>2014T Case Name</th>
+				<th>Decision Date</th>
+				<th>Law at Issue</th>
+				<th>Early Anchor Case</th>
+				<th>Decision Date</th>
+				<th>Network Map</th>
+				<th>Network Age</th>
+				<th>3D cases</th>
+				<th>3D Dissent</th>
+				<th>2D cases</th>
+				<th>2D Dissent</th>
+				</tr>
+		</thead>
+		
+
+<!--
+	Current Idea is 11 columns
+-->
+
+	
+		<tbody>
+			<tr>
+				<td><a target="_blank" href="http://scdb.wustl.edu/analysisCaseDetail.php?sid=1501-JACKPOT-6144&amp;cid=2014-001-01&amp;pg=0">Peter</a></td>
+				<td>Parker</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>Jul 6, 2006 8:14 AM</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Hood</td>
+				<td>33</td>
+				<td>$19.99</td>
+				<td>25%</td>
+				<td>+12</td>
+				<td>Dec 10, 2002 5:14 AM</td>
+			</tr>
+			<tr>
+				<td>Clark</td>
+				<td>Kent</td>
+				<td>18</td>
+				<td>$15.89</td>
+				<td>44%</td>
+				<td>-26</td>
+				<td>Jan 12, 2003 11:14 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Almighty</td>
+				<td>45</td>
+				<td>$153.19</td>
+				<td>44.7%</td>
+				<td>+77</td>
+				<td>Jan 18, 2001 9:12 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Evans</td>
+				<td>22</td>
+				<td>$13.19</td>
+				<td>11%</td>
+				<td>-100.9</td>
+				<td>Jan 18, 2007 9:12 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Evans</td>
+				<td>22</td>
+				<td>$13.19</td>
+				<td>11%</td>
+				<td>0</td>
+				<td>Jan 18, 2007 9:12 AM</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<!-- Getting Rid of TIP
+	<p class="tip">
+		<em>TIP!</em> Sort multiple columns simultaneously by holding down the shift key and clicking a second, third or even fourth column header!
+	</p>	
+	-->
+	
+		<a name="More-Info"></a>
+	<h1>More Info</h1>
+	<p>
+		To use the tablesorter plugin, include the <a class="external" href="http://jquery.com">jQuery</a>
+		library and the tablesorter plugin inside the <code>&lt;head&gt;</code> tag
+		of your HTML document:
+	</p>
+
+
+
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,1157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+	<title>SCOTUS 2015 Term Networks</title>
+
+    <!-- Hide this line for IE (needed for Firefox and others) -->
+    <![if !IE]>
+    <link rel="icon" href="http://home.ubalt.edu/id86mp66/Images/mapper_favicon.png" type="image/png" />
+    <![endif]>
+    <!-- This is needed for IE -->
+    <link rel="shortcut icon" href="home.ubalt.edu/id86mp66/Images/mapper_favicon.ico" type="image/ico" />
+	
+
+	<link rel="stylesheet" href="jquerytablesorterfile/docs/css/jq.css" type="text/css" media="print, projection, screen" />
+	<link rel="stylesheet" href="jquerytablesorterfile/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+
+<!--
+	Here I've called bootstrap to get its look and feel
+-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+<!-- It seems like I can just use the CDN JQuery
+	<script type="text/javascript" src="../jquery-latest.js"></script>
+-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<script type="text/javascript" src="jquerytablesorterfile/jquery.tablesorter.js"></script>
+
+	<script type="text/javascript">
+	$(function() {		
+		$("#tablesorter-scotus").tablesorter({sortList:[[1,1]], widgets: ['zebra']});
+		$("#options").tablesorter({sortList: [[1,1]], headers: { 3:{sorter: false}, 4:{sorter: false}}});
+	});	
+	</script>
+</head>
+
+
+<body>
+
+
+<a name="Introduction"></a>
+
+<div class="container">
+  <div class="page-header">
+    <h1 class="text-center"><span class="text-danger">2015 Term</span> SCOTUS Networks</h1>      
+  </div>
+</div>
+
+<div id="main">
+		
+
+	<p>
+		This collection of 2015 Term Supreme Court citation networks was created with a <a class="external" href="https://courtlistener.com:81/visualizations/scotus-mapper/">free online tool</a> available on <a class="external" href="https://courtlistener.com:81/visualizations/scotus-mapper/">CourtListener</a>. Since the 2015 Term is <a class="external"
+		 href="http://www.supremecourt.gov/opinions/slipopinion/15"> ongoing</a>, this table is a work in progress. Cases decided by the Court in its 2015 Term are in the table below with links to CourtListener network visualizations and <a href="http://www.scotusblog.com/case-files/terms/ot2015/">SCOTUSBlog</a> entries. You can sort table data by column values including network age, number of network cases, and degree of dissent. To learn more about doctrinal mapping, visit the <a class="external" href="http://law.ubalt.edu/faculty/scotus-mapping/index.cfm">SCOTUS Mapping Project homepage</a>. Read more about the terminology and method used in this collection below. (For a complete collection of <a href="http://home.ubalt.edu/id86mp66/scotusmapper/Homepage_2014Term.html" target="_blank">2014 Term Cases, click here</a>).</p>
+		
+	<p class="text-center">
+		<a href="#NetworkTerms">Network Terminology</a> ~ <a href="#Method">Method</a> ~  <a href="#Collaborate">Collaborate</a>
+	</p>
+  	
+  	
+	<a name="2015Data"></a>
+	<h3>2015 Term Network Data</h3>
+
+	<table id="tablesorter-scotus" class="tablesorter" border="0" cellpadding="0" cellspacing="1">
+		<thead>
+			<tr>
+				<th>2015 Term Case (link to Visualization)</th>
+				<th>Decided</th>
+				<th>Law at Issue (link to SCOTUSBlog)</th>
+				<th>Network Anchor</th>
+				<th>Decided</th>
+				<th>Network Age</th>
+				<th>3D cases</th>
+				<th>3D DOD</th>
+				<th>2D cases</th>
+				<th>2D DOD</th>
+			</tr>
+		</thead>
+		
+
+	
+		<tbody>
+			
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/549/strickland-1984-to-kulbicki-2015/">Maryland v. Kulbicki</a></td>
+    <td>2015-10-05</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/maryland-v-kulbicki-2/">Ineffective Assistance of Counsel</a></td>
+    <td>Strickland </td>
+    <td>1984-05-14</td>
+    <td>31.39</td>
+    <td>16</td>
+    <td>0.34</td>
+    <td>4</td>
+    <td>0.35</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/550/harlow-1982-to-mullenix-2015/">Mullenix v. Luna</a></td>
+    <td>2015-11-09</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/mullenix-v-luna/">Qualified Immunity</a></td>
+    <td>Harlow </td>
+    <td>1982-06-24</td>
+    <td>33.38</td>
+    <td>20</td>
+    <td>0.44</td>
+    <td>7</td>
+    <td>0.36</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/563/nelson-1993-to-sachs-2015/">OBB Personenverkehr AG v. Sachs</a></td>
+    <td>2015-12-01</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/obb-personenverkehr-ag-v-sachs/">Foreign Sovereign Immunities Act</a></td>
+    <td>Nelson</td>
+    <td>1993-03-23</td>
+    <td>22.69</td>
+    <td>2</td>
+    <td>0.38</td>
+    <td>2</td>
+    <td>0.38</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/565/goosby-1973-to-shapiro-2015/">Shapiro v. McManus</a></td>
+    <td>2015-12-08</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/shapiro-v-mack/">Three Judge Panel (28 U.S.C. 2284)</a></td>
+    <td>Goosby</td>
+    <td>1973-01-17</td>
+    <td>42.89</td>
+    <td>4</td>
+    <td>0.19</td>
+    <td>3</td>
+<td>0.25</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/582/perry-1987-to-directv-2015/">DIRECTV, Inc. v. Imburgia</a></td>
+    <td>2015-12-14</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/directv-inc-v-imburgia/">Federal Arbitration Act </a></td>
+    <td>Perry</td>
+    <td>1987-06-15</td>
+    <td>28.50</td>
+    <td>16</td>
+    <td>0.48</td>
+    <td>11</td>
+    <td>0.48</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/585/witherspoon-1968-to-wheeler-2015/">White v. Wheeler</a></td>
+    <td>2015-12-14</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/white-v-wheeler/">6A - Juror Exclusion</a></td>
+    <td>Witherspoon</td>
+    <td>1968-06-03</td>
+    <td>47.53</td>
+    <td>18</td>
+    <td>0.57</td>
+    <td>4</td>
+    <td>0.56</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/598/woodford-2006-to-bruce-2016/">Bruce v. Samuels</a></td>
+    <td>2016-01-12</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/bruce-v-samuels/">Prison Litigation Reform Act + IFP</a></td>
+    <td>Woodford</td>
+    <td>2006-06-22</td>
+    <td>9.56</td>
+    <td>4</td>
+    <td>0.25</td>
+    <td>3</td>
+    <td>0.25</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/600/apprendi-2000-to-hurst-2016/">Hurst v. Florida</a></td>
+    <td>2016-01-12</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/hurst-v-florida/">Jury Death Sentences</a></td>
+    <td>Apprendi</td>
+    <td>2000-06-26</td>
+    <td>15.55</td>
+    <td>8</td>
+    <td>0.69</td>
+    <td>6</td>
+    <td>0.79</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/603/preiser-1975-to-campbell-ewald-2016/">Campbell-Ewald v. Gomez</a></td>
+    <td>2016-01-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/campbell-ewald-company-v-gomez/">Mootness + FRCP 68</a></td>
+    <td>Preiser</td>
+    <td>1975-06-25</td>
+    <td>40.57</td>
+    <td>21</td>
+    <td>0.35</td>
+    <td>9</td>
+    <td>0.36</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/613/boyde-1990-to-carr-2016/">Kansas v. Carr</a></td>
+    <td>2016-01-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/kansas-v-carr-2/">Death Penalty Mitigation Instructions</a></td>
+    <td>Boyde</td>
+    <td>1990-04-23</td>
+    <td>25.75</td>
+    <td>11</td>
+    <td>0.84</td>
+    <td>5</td>
+    <td>0.80</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/616/mertens-1993-to-montanile-2016/">Montanile v. Board of Trustees</a></td>    
+    <td>2016-01-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/montanile-v-board-of-trustees-of-the-national-elevator-industry-health-benefit-plan/">ERISA and Equitable Relief</a></td>
+    <td>Mertens </td>
+    <td>1993-06-01</td>
+    <td>22.64</td>
+    <td>7</td>
+    <td>0.57</td>
+    <td>5</td>
+    <td>0.65</td>
+</tr>  
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/622/fifth-third-2014-to-amgen-2016/">Amgen Inc. v. Harris</a></td>
+    <td>2016-01-25</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/amgen-inc-v-harris-2/">ESOP Fiduciary Duty</a></td>
+    <td>Fifth Third</td>
+    <td>2014-06-25</td>
+    <td>1.59</td>
+    <td>2</td>
+    <td>0.0</td>
+    <td>2</td>
+    <td>0.0</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/929/louisiana-power-1972-to-electric-power-supply-2016/">FERC v. Electric Power Supply Assn.</a></td>
+    <td>2016-01-25</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/federal-energy-regulatory-commission-v-electric-power-supply-association/">Wholesale Electricity - FPA</a></td>
+    <td>Louisiana Power</td>
+    <td>1972-06-07</td>
+    <td>43.63</td>
+    <td>5</td>
+    <td>0.35</td>
+    <td>3</td>
+    <td>0.42</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/623/hughes-1980-to-james-2016/">James v. Boise</a></td>
+    <td>2016-01-25</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/james-v-city-of-boise/">SCOTUS Supremacy</a></td>
+    <td>Hughes</td>
+    <td>1980-11-10</td>
+    <td>35.21</td>
+    <td>2</td>
+    <td>0.13</td>
+    <td>2</td>
+    <td>0.13</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/625/pace-2005-to-menominee-tribe-2016/">Menominee Tribe v. United States</a></td>
+    <td>2016-01-25</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/menominee-indian-tribe-of-wisconsin-v-united-states/">Federal Equitable Tolling </a></td>
+    <td>Pace</td>
+    <td>2005-04-27</td>
+    <td>10.75</td>
+    <td>5</td>
+    <td>0.60</td>
+    <td>4</td>
+    <td>0.63</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/931/teague-1989-to-montgomery-2016/">Montgomery v. Louisiana</a></td>
+    <td>2016-01-25</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/montgomery-v-louisiana/">Retroactivity (Miller)</a></td>
+    <td>Teague</td>
+    <td>1989-04-17</td>
+    <td>26.78</td>
+    <td>42</td>
+    <td>0.68</td>
+    <td>13</td>
+    <td>0.73</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/631/jackson-v-virginia-1979-to-musacchio-2016/">Musacchio v. United States</a></td>
+    <td>2016-01-25</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/musacchio-v-united-states/">Sufficiency Review</a></td>
+    <td>Jackson</td>
+    <td>1979-10-01</td>
+    <td>36.32</td>
+    <td>2</td>
+    <td>0.0</td>
+    <td>2</td>
+    <td>0.0</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/612/met-life-1985-to-gobeille-2016/">Gobeille v. Liberty Mut. Ins. Co.</a></td>
+    <td>2016-03-01</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/gobeille-v-liberty-mutual-insurance-company/">ERISA Preemption</a></td>
+    <td>Met Life</td>
+    <td>1985-06-03</td>
+    <td>30.75</td>
+    <td>23</td>
+    <td>0.39</td>
+    <td>9</td>
+    <td>0.28</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/610/mandel-bros-1959-to-lockhart-2016/">Lockhart v. United States</a></td>
+    <td>2016-03-01</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/lockhart-v-united-states/">Child Pornography Sentencing</a></td>
+    <td>Mandel Bros</td>
+    <td>1959-05-04</td>
+    <td>56.83</td>
+    <td>7</td>
+    <td>0.42</td>
+    <td>5</td>
+    <td>0.38</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/595/steelworkers-1965-to-americold-2016/">Americold Realty v. ConAgra Foods</a></td>
+    <td>2016-03-07</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/americold-logistics-llc-v-conagra-foods-inc/">Diversity Jurisdiction</a></td>
+    <td>Steelworkers</td>
+    <td>1965-11-22</td>
+    <td>50.29</td>
+    <td>4</td>
+    <td>0.31</td>
+    <td>4</td>
+    <td>0.31</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/589/brady-1963-to-wearry-2016/">Wearry v. Cain</a></td>
+    <td>2016-03-07</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/wearry-v-cain/">Disclosure of Evidence (Brady)</a></td>
+    <td>Brady</td>
+    <td>1963-05-13</td>
+    <td>52.82</td>
+    <td>20</td>
+    <td>0.61</td>
+    <td>8</td>
+    <td>0.53</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/593/underwriters-assur-1982-to-vl-2016/">V.L. v. E.L.</a></td>
+    <td>2016-03-07</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/v-l-v-e-l/">Full Faith and Credit</a></td>
+    <td>Underwriters</td>
+    <td>1982-03-24</td>
+    <td>33.96</td>
+    <td>5</td>
+    <td>0.35</td>
+    <td>2</td>
+    <td>0.0</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/659/heller-2008-to-caetano-2016/">Caetano v. Mass</a></td>
+    <td>2016-03-21</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/caetano-v-massachusetts/">2A (Second Amendment)</a></td>
+    <td>Heller</td>
+    <td>2008-06-26</td>
+    <td>7.73</td>
+    <td>3</td>
+    <td>0.67</td>
+    <td>3</td>
+    <td>0.67</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="http://www.supremecourt.gov/opinions/15pdf/14-1516_2co3.pdf">Duncan v. Owens</a></td>
+    <td>2016-01-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/duncan-v-owens/">Federal Habeas</a></td>
+    <td><mark>No precedent cited</mark></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>n/a</td>
+    <td>0</td>
+    <td>n/a</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="http://www.supremecourt.gov/opinions/15pdf/137orig_ap6b.pdf">Montana v. Wyoming</a></td>
+    <td>2016-03-21</td>
+    <td><a class="external" href="http://kmmsam.com/scotus-order-montana-entitled-to-damages-for-violation-of-river-compact/">State water dispute</a></td>
+    <td><mark>No precedent cited</mark></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>n/a</td>
+    <td>0</td>
+    <td>n/a</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="http://www.supremecourt.gov/opinions/15pdf/14-520_d18f.pdf">Hawkins v. Community Bank</a></td>
+    <td>2016-03-22</td>
+    <td><a class="external" href="http://thehill.com/policy/finance/273895-supreme-court-issues-first-4-4-tie-since-scalias-death">ECOA</a></td>
+    <td><mark>No precedent cited</mark></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>n/a</td>
+    <td>0</td>
+    <td>n/a</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/666/sea-land-2012-to-sturgeon-2016/">Sturgeon v. Frost</a></td>
+    <td>2016-03-22</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/sturgeon-v-masica/">ANILCA</a></td>
+    <td>Sea-Land</td>
+    <td>2012-03-20</td>
+    <td>4.01</td>
+    <td>2</td>
+    <td>0.13</td>
+    <td>2</td>
+    <td>0.13</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/664/amchem-1997-to-tyson-foods-2016/">Tyson Foods v. Bouaphakeo</a></td>
+    <td>2016-03-22</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/tyson-foods-inc-v-bouaphakeo/">Class Action Certification</a></td>
+    <td>Amchem</td>
+    <td>1997-06-25</td>
+    <td>18.74</td>
+    <td>5</td>
+    <td>0.65</td>
+    <td>4</td>
+    <td>0.69</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/668/seymour-1962-to-parker-2016/">Nebraska v. Parker</a></td>
+    <td>2016-03-22</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/nebraska-v-parker/">Reservation Boundaries</a></td>
+    <td>Seymour</td>
+    <td>1962-01-15</td>
+    <td>54.18</td>
+    <td>14</td>
+    <td>0.27</td>
+    <td>8</td>
+    <td>0.25</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="http://www.supremecourt.gov/opinions/15pdf/14-915_1bn2.pdf">Friedrichs v. CA Teachers Assn.</a></td>
+    <td>2016-03-29</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/friedrichs-v-california-teachers-association/">1A - Agency Shop Fees</a></td>
+    <td><mark>No precedent cited</mark></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>n/a</td>
+    <td>0</td>
+    <td>n/a</td>
+</tr>
+
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/701/monsanto-1989-to-luis-2016/">Luis v. United States</a></td>
+    <td>2016-03-30</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/luis-v-united-states/">6A - Pretrial Asset Freeze</a></td>
+    <td>Monsanto</td>
+    <td>1989-06-22</td>
+    <td>26.77</td>
+    <td>7</td>
+    <td>0.89</td>
+    <td>5</td>
+    <td>0.90</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/703/wesberry-1964-to-evenwel-2016/">Evenwel v. Abbott</a></td>
+    <td>2016-04-04</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/evenwel-v-abbott/">One Person, One Vote</a></td>
+    <td>Wesberry</td>
+    <td>1964-02-17</td>
+    <td>52.13</td>
+    <td>31</td>
+    <td>0.60</td>
+    <td>12</td>
+    <td>0.54</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/705/doe-2003-to-nichols-2016/">Nichols v. United States</a></td>
+    <td>2016-04-04</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/nichols-v-united-states/">Sex Offender Registration</a></td>
+    <td>Doe</td>
+    <td>2003-03-05</td>
+    <td>13.08</td>
+    <td>5</td>
+    <td>0.50</td>
+    <td>4</td>
+    <td>0.50</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/708/yarborough-2004-to-woods-2016/">Woods v. Etherton</a></td>
+    <td>2016-04-04</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/woods-v-etherton/">AEDPA Deference</a></td>
+    <td>Yarborough</td>
+    <td>2004-06-01</td>
+    <td>11.84</td>
+    <td>6</td>
+    <td>0.29</td>
+    <td>2</td>
+    <td>0.44</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/724/teague-1989-to-welch-2016/">Welch v. United States</a></td>
+    <td>2016-04-18</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/welch-v-united-states-2/">Retroactivity (Johnson)</a></td>
+    <td>Teague</td>
+    <td>1989-04-17</td>
+    <td>27</td>
+    <td>44</td>
+    <td>0.62</td>
+    <td>13</td>
+    <td>0.68</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/727/nantahala-1986-to-hughes-2016/">Hughes v. Talen Energy</a></td>
+    <td>2016-04-19</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/nazarian-v-ppl-energyplus-llc/">FERC Preemption</a></td>
+    <td>Nantahala</td>
+    <td>1986-06-17</td>
+    <td>29.84</td>
+    <td>5</td>
+    <td>0.31</td>
+    <td>5</td>
+    <td>0.31</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/728/carroll-1955-to-hyatt-2016/">Franchise Tax v. Hyatt</a></td>
+    <td>2016-04-19</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/franchise-tax-board-of-california-v-hyatt/">Full Faith and Credit</a></td>
+    <td>Carroll</td>
+    <td>1955-06-06</td>
+    <td>60.87</td>
+    <td>6</td>
+    <td>0.42</td>
+    <td>5</td>
+    <td>0.50</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/730/olano-1993-to-molina-martinez-2016/">Molina-Martinez v. US</a></td>
+    <td>2016-04-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/molina-martinez-v-united-states/">Harmless Error (Fed Sentencing) </a></td>
+    <td>Olano</td>
+    <td>1993-04-26</td>
+    <td>22.99</td>
+    <td>14</td>
+    <td>0.36</td>
+    <td>6</td>
+    <td>0.38</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/736/robertson-1992-to-bank-markazi-2016/">Bank Markazi v. Peterson</a></td>
+    <td>2016-04-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/bank-markazi-v-peterson/">Separation of Powers</a></td>
+    <td>Robertson</td>
+    <td>1992-03-25</td>
+    <td>24.07</td>
+    <td>5</td>
+    <td>0.60</td>
+    <td>5</td>
+    <td>0.50</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/742/brown-1983-to-harris-2016/">Harris v. AZ Independent Redistricting</a></td>
+    <td>2016-04-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/harris-v-arizona-independent-redistricting-commission/">Equal Protection (Voting)</a></td>
+    <td>Brown</td>
+    <td>1983-06-22</td>
+    <td>32.83</td>
+    <td>9</td>
+    <td>0.72</td>
+    <td>4</td>
+    <td>0.75</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/752/letter-carriers-1973-to-heffernan-2016/">Heffernan v. City of Patterson</a></td>
+    <td>2016-04-26</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/heffernan-v-paterson/">1A - Mistaken Retaliation</a></td>
+    <td>Letter Carriers</td>
+    <td>1973-06-25</td>
+    <td>42.84</td>
+    <td>21</td>
+    <td>0.69</td>
+    <td>7</td>
+    <td>0.75</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/763/evans-1992-to-ocasio-2016/">Ocasio v. United States</a></td>
+    <td>2016-05-02</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/ocasio-v-united-states/">Hobbs Act Conspiracy</a></td>
+    <td>Evans</td>
+    <td>1992-05-26</td>
+    <td>23.93</td>
+    <td>2</td>
+    <td>0.75</td>
+    <td>2</td>
+    <td>0.75</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/772/gregory-v-ashcroft-1991-to-sheriff-2016/">Sheriff v. Gillie</a></td>
+    <td>2016-05-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/sheriff-v-gillie/">Fair Debt Collection Practices Act</a></td>
+    <td>Gregory</td>
+    <td>1991-06-20</td>
+    <td>24.91</td>
+    <td>4</td>
+    <td>0.31</td>
+    <td>3</td>
+    <td>0.25</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/777/md/">Spokeo v. Robins</a></td>
+    <td>2016-05-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/spokeo-inc-v-robins/">Article III Standing</a></td>
+    <td>Lujan</td>
+    <td>1992-06-12</td>
+    <td>23.93</td>
+    <td>28</td>
+    <td>0.46</td>
+    <td>13</td>
+    <td>0.54</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/781/field-1995-to-husky-intl-2016/">Husky Int'l Electronics v. Ritz</a></td>
+    <td>2016-05-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/husky-international-electronics-inc-v-ritz/">Bankruptcy Fraud</a></td>
+    <td>Field</td>
+    <td>1995-11-28</td>
+    <td>20.46</td>
+    <td>4</td>
+    <td>0.31</td>
+    <td>4</td>
+    <td>0.31</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/785/pan-american-petroleum-1961-to-manning-2016/">Merrill Lynch et al v. Manning</a></td>
+    <td>2016-05-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/merrill-lynch-pierce-fenner-smith-inc-v-manning/">SEA Jursidiction</a></td>
+    <td>Pan American</td>
+    <td>1961-05-29</td>
+    <td>54.97</td>
+    <td>7</td>
+    <td>0.14</td>
+    <td>3</td>
+    <td>0.0</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/788/kiyemba-2010-to-zubik-2016/">Zubik v. Burwell</a></td>
+    <td>2016-05-16</td>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/788/kiyemba-2010-to-zubik-2016/">RFRA Punt</a></td>
+    <td>Kiyemba</td>
+    <td>2010-03-01</td>
+    <td>6.21</td>
+    <td>2</td>
+    <td>0.0</td>
+    <td>2</td>
+    <td>0.0</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/789/ylst-1991-to-kernan-2016/">Kernan v. Hinojasa</a></td>
+    <td>2016-05-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/kernan-v-hinojosa/">AEDPA Deference</a></td>
+    <td>Ylst</td>
+    <td>1991-06-24</td>
+    <td>24.89</td>
+    <td>2</td>
+    <td>0.75</td>
+    <td>2</td>
+    <td>0.75</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/791/christiansburg-1978-to-crst-2016/">CRST Van Expedited v. EEOC</a></td>
+    <td>2016-05-19</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/crst-van-expedited-inc-v-eeoc/">Title VII - Attorney Fees</a></td>
+    <td>Christiansburg</td>
+    <td>1978-01-23</td>
+    <td>38.32</td>
+    <td>12</td>
+    <td>0.33</td>
+    <td>5</td>
+    <td>0.40</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/793/marion-1971-to-betterman-2016/">Betterman v. Montana</a></td>
+    <td>2016-05-19</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/betterman-v-montana/">6A - Speedy Trial</a></td>
+    <td>Marion</td>
+    <td>1971-12-20</td>
+    <td>44.41</td>
+    <td>16</td>
+    <td>0.30</td>
+    <td>6</td>
+    <td>0.33</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/795/feola-1975-to-luna-torres-2016/">Luna Torres v. Lynch</a></td>
+    <td>2016-05-19</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/torres-v-holder/">INA - Aggravated Delony</a></td>
+    <td>Feola</td>
+    <td>1975-03-19</td>
+    <td>41.17</td>
+    <td>7</td>
+    <td>0.57</td>
+    <td>4</td>
+    <td>0.69</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/797/batson-1986-to-foster-2016/">Foster v. Chatman</a></td>
+    <td>2016-05-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/foster-v-humphrey/">Equal Protection (Batson)</a></td>
+    <td>Batson</td>
+    <td>1986-04-30</td>
+    <td>30.06</td>
+    <td>24</td>
+    <td>0.63</td>
+    <td>8</td>
+    <td>0.53</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/799/diamond-1986-to-wittman-2016/">Wittman v. Personhuballah</a></td>
+    <td>2016-05-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/wittman-v-personhuballah/">Article III Standing (Congress)</a></td>
+    <td>Diamond</td>
+    <td>1986-04-30</td>
+    <td>30.06</td>
+    <td>11</td>
+    <td>0.32</td>
+    <td>5</td>
+    <td>0.20</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/800/ricks-1980-to-green-2016/">Green v. Brennan</a></td>
+    <td>2016-05-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/green-v-donahoe/">Title VII - Limitations Period</a></td>
+    <td>Ricks</td>
+    <td>1980-12-15</td>
+    <td>35.44</td>
+    <td>11</td>
+    <td>0.70</td>
+    <td>7</td>
+    <td>0.68</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/805/frozen-food-1956-to-hawkes-2016/">Army Corps of Engineers v. Hawkes</a></td>
+    <td>2016-05-31</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/united-states-army-corps-of-engineers-v-hawkes-co-inc/">APA and Clean Water Act</a></td>
+    <td>Frozen Food</td>
+    <td>1956-04-23</td>
+    <td>60.10</td>
+    <td>7</td>
+    <td>0.21</td>
+    <td>3</td>
+    <td>0.33</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/808/coleman-1991-to-lee-2016/">Johnson v. Lee</a></td>
+    <td>2016-05-31</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/johnson-v-lee/">Federal Habeas - State Default</a></td>
+    <td>Coleman</td>
+    <td>1991-09-13</td>
+    <td>24.71</td>
+    <td>12</td>
+    <td>0.38</td>
+    <td>9</td>
+    <td>0.36</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/810/simmons-1994-to-lynch-2016/">Lynch v. Arizona</a></td>
+    <td>2016-05-31</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/lynch-v-arizona/">Due Process - Parole Ineligibilty (Simmons)</a></td>
+    <td>Simmons</td>
+    <td>1994-06-07</td>
+    <td>21.96</td>
+    <td>7</td>
+    <td>0.75</td>
+    <td>5</td>
+    <td>0.70</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/813/md/">Simmons v. Himmelreich</a></td>
+    <td>2016-06-06</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/simmons-v-himmelreich/">Federal Tort Claims Act</a></td>
+    <td>Smith</td>
+    <td>1991-03-20</td>
+    <td>25.22</td>
+    <td>2</td>
+    <td>0.13</td>
+    <td>2</td>
+    <td>0.13</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/811/booth-2001-to-ross-2016/">Ross v. Blake</a></td>
+    <td>2016-06-06</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/ross-v-blake/">Prison Litigation Reform Act - Exhaustion</a></td>
+    <td>Booth</td>
+    <td>1991-05-29</td>
+    <td>15.02</td>
+    <td>5</td>
+    <td>0.15</td>
+    <td>4</td>
+    <td>0.19</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/820/murchison-1955-to-williams-2016/">Williams v. Pennsylvania</a></td>
+    <td>2016-06-09</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/williams-v-pennsylvania/">Due Process - Judicial Bias</a></td>
+    <td>Murchison</td>
+    <td>1955-05-16</td>
+    <td>61.07</td>
+    <td>24</td>
+    <td>0.45</td>
+    <td>9</td>
+    <td>0.39</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/817/link-1962-to-dietz-2016/">Dietz v. Bouldin</a></td>
+    <td>2016-06-09</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/dietz-v-bouldin/">Inherent Power - Jury Recall</a></td>
+    <td>Link</td>
+    <td>1962-06-25</td>
+    <td>53.96</td>
+    <td>9</td>
+    <td>0.50</td>
+    <td>5</td>
+    <td>0.55</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/819/waller-1970-to-sanchez-valle-2016/">Purto Rico v. Sanchez Valle</a></td>
+    <td>2016-06-09</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/puerto-rico-v-sanchez-valle/">Double Jeopardy - Sovereignty</a></td>
+    <td>Waller</td>
+    <td>1970-04-06</td>
+    <td>48.18</td>
+    <td>7</td>
+    <td>0.36</td>
+    <td>4</td>
+    <td>0.25</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/826/fogerty-1994-to-halo-2016/">Halo Electronics v. Pulse Electronics</a></td>
+    <td>2016-06-13</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/halo-electronics-inc-v-pulse-electronics-inc/">Patents - Enhanced Damages</a></td>
+    <td>Fogerty</td>
+    <td>1994-03-01</td>
+    <td>22.29</td>
+    <td>6</td>
+    <td>0.0</td>
+    <td>4</td>
+    <td>0.0</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/838/ron-pair-enterprises-1989-to-franklin-tax-free-2016/">Puerto Rico v. Franklin Cal. Tax-Free Trust</a></td>
+    <td>2016-06-13</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/puerto-rico-v-franklin-california-tax-free-trust/">Bankruptcy - Preemption</a></td>
+    <td>Ron Pair</td>
+    <td>1989-02-22</td>
+    <td>27.31</td>
+    <td>7</td>
+    <td>0.54</td>
+    <td>2</td>
+    <td>.75</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/834/md/">United States v. Bryant</a></td>
+    <td>2016-06-13</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/united-states-v-bryant/">6A - Unrepresented Predicate Offenses</a></td>
+    <td>Burgett</td>
+    <td>1967-11-13</td>
+    <td>48.58</td>
+    <td>12</td>
+    <td>0.63</td>
+    <td>6</td>
+    <td>0.50</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/851/lexecon-1998-to-kingdomware-tech-2016/">Kingdomware Technoloiges v. United States</a></td>
+    <td>2016-06-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/kingdomware-technologies-inc-v-united-states/">Veterans Benefits Act</a></td>
+    <td>Lexecon</td>
+    <td>1998-03-03</td>
+    <td>18.29</td>
+    <td>2</td>
+    <td>0.0</td>
+    <td>2</td>
+    <td>0.0</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/847/neder-1999-to-universal-health-2016/">Universal Health Services v. United States</a></td>
+    <td>2016-06-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/universal-health-services-v-united-states-ex-rel-escobar/">False Claims Act</a></td>
+    <td>Neder</td>
+    <td>1999-06-10</td>
+    <td>18.29</td>
+    <td>4</td>
+    <td>0.19</td>
+    <td>2</td>
+    <td>0.38</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/849/fogerty-1994-to-kirtsaeng-2016/">Kirtsaeng v. John Wiley and Sons</a></td>
+    <td>2016-06-16</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/kirtsaeng-v-john-wiley-sons-inc-2/">Copyright Act Fees</a></td>
+    <td>Fogerty</td>
+    <td>1994-03-01</td>
+    <td>22.29</td>
+    <td>5</td>
+    <td>0.0</td>
+    <td>4</td>
+    <td>0.0</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/858/state-farm-1983-to-encino-motorcars-2016/">Encinco Motorcars v. Navarro</a></td>
+    <td>2016-06-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/encino-motorcars-llc-v-navarro/">Fair Labor Standards Act</a></td>
+    <td>State Farm</td>
+    <td>1983-06-24</td>
+    <td>32.99</td>
+    <td>17</td>
+    <td>0.47</td>
+    <td>5</td>
+    <td>0.45</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/852/brown-1975-to-strieff-2016/">Utah v. Strieff</a></td>
+    <td>2016-06-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/utah-v-strieff/">4A - Exclusionary Rule</a></td>
+    <td>Brown</td>
+    <td>1975-06-26</td>
+    <td>40.99</td>
+    <td>33</td>
+    <td>0.71</td>
+    <td>10</td>
+    <td>0.72</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/860/block-1984-to-cuozzo-speed-2016/">Cuozzo Speed Technologies v. Lee</a></td>
+    <td>2016-06-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/cuozzo-speed-technologies-llc-v-lee/">Patents - Inter Partes Review</a></td>
+    <td>Block</td>
+    <td>1984-06-04</td>
+    <td>32.04</td>
+    <td>12</td>
+    <td>0.44</td>
+    <td>6</td>
+    <td>0.38</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/862/lopez-1995-to-taylor-2016/">Taylor v. United States</a></td>
+    <td>2016-06-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/taylor-v-united-states/">Hobbs Act - Commerce Limits</a></td>
+    <td>Lopez</td>
+    <td>1995-04-26</td>
+    <td>21.15</td>
+    <td>11</td>
+    <td>0.55</td>
+    <td>6</td>
+    <td>0.58</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/865/benz-1957-to-rjr-nabisco-2016/">RJR Nabisco v. European Community</a></td>
+    <td>2016-06-20</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/rjr-nabisco-inc-v-the-european-community/">RICO - Extraterritoriality</a></td>
+    <td>Benz</td>
+    <td>1957-04-08</td>
+    <td>59.20</td>
+    <td>13</td>
+    <td>0.40</td>
+    <td>5</td>
+    <td>0.55</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/876/bakke-1978-to-fisher-ii-2016/
+">Fisher v. University of Texas</a></td>
+    <td>2016-06-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/fisher-v-university-of-texas-at-austin-2/">Equal Protection - Affirmative Action</a></td>
+    <td>Bakke</td>
+    <td>1978-06-28</td>
+    <td>37.99</td>
+    <td>31</td>
+    <td>0.74</td>
+    <td>11</td>
+    <td>0.86</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/881/skinner-1989-to-birchfield-2016/">Birchfield v. North Dakota</a></td>
+    <td>2016-06-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/birchfield-v-north-dakota/">4A - Body Searches</a></td>
+    <td>Skinner</td>
+    <td>1989-03-21</td>
+    <td>27.26</td>
+    <td>19</td>
+    <td>0.57</td>
+    <td>6</td>
+    <td>0.71</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/884/taylor-1990-to-mathis-2016/">Mathis v. United States</a></td>
+    <td>2016-06-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/mathis-v-united-states/">ACCA - Past State Convictions</a></td>
+    <td>Taylor</td>
+    <td>1990-05-29</td>
+    <td>26.07</td>
+    <td>14</td>
+    <td>0.39</td>
+    <td>9</td>
+    <td>0.42</td>
+</tr>
+<tr>
+    <td><a class="external" href="http://www.supremecourt.gov/opinions/15pdf/13-1496_7648.pdf">Dollar General v. Mississippi Band</a></td>
+    <td>2016-06-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/dollar-general-corporation-v-mississippi-band-of-choctaw-indians/">Indian Tribal Jurisdiction</a></td>
+    <td><mark>No precedent cited</mark></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>n/a</td>
+    <td>0</td>
+    <td>n/a</td>
+</tr>
+<tr>
+    <td><a class="external" href="http://www.supremecourt.gov/opinions/15pdf/15-674_jhlo.pdf">Unites States v. Texas</a></td>
+    <td>2016-06-23</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/united-states-v-texas/">APA + Take Care Clause</a></td>
+    <td><mark>No precedent cited</mark></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>n/a</td>
+    <td>0</td>
+    <td>n/a</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/886/evans-1992-to-mcdonnell-2016/">McDonnell v. United States</a></td>
+    <td>2016-06-27</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/mcdonnell-v-united-states/">Honest Services Fraud</a></td>
+    <td>Evans</td>
+    <td>1992-05-26</td>
+    <td>24.09</td>
+    <td>2</td>
+    <td>0.38</td>
+    <td>2</td>
+    <td>0.38</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/959/casey-1992-to-hellerstedt-2016/">Whole Woman's Health v. Hellerstedt</a></td>
+    <td>2016-06-27</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/whole-womans-health-v-cole/">Abortion Restrictions</a></td>
+    <td>Casey</td>
+    <td>1992-06-29</td>
+    <td>23.99</td>
+    <td>17</td>
+    <td>0.54</td>
+    <td>9</td>
+    <td>0.64</td>
+</tr>
+<tr>
+    <td><a class="external" href="https://www.courtlistener.com/visualizations/scotus-mapper/894/hayes-2009-to-voisine-2016/">Voisine v. United States</a></td>
+    <td>2016-06-27</td>
+    <td><a class="external" href="http://www.scotusblog.com/case-files/cases/voisine-v-united-states/">Gun Control - 18 USC 922</a></td>
+    <td>Hayes</td>
+    <td>2009-02-24</td>
+    <td>7.34</td>
+    <td>5</td>
+    <td>0.25</td>
+    <td>3</td>
+    <td>0.33</td>
+</tr>
+
+
+		</tbody>
+	</table>
+	
+	<!-- Putting in some spaces -->
+	<br>
+
+<!-- Table Notes, Network Terms, 2015 Term Stats, Method/Analysis, and Collaborate -->
+
+    <a name="Table_Notes"></a>
+    <h3>Table Notes</h3>
+    <p>This table contains the following cases in which no SCOTUS precedent was cited at all. Therefore, there are no citation networks available for those cases.
+    <ul>
+        <li><strong>Duncan v. Owens</strong>. In this federal habeas case, the writ of certoriari was dismissed as improvidently granted.</li>
+        <li><strong>Montana v. Wyoming</strong>. In this original jurisdiction case regarding State water rights, the Court issued a one-page Order and Judgment without reference to any case law</li>
+        <li><strong>Hawkins v. Community Bank</strong>. In this Equal Credit Opportunity Act case, the Court was equally divided for the first time since Justice Scalia's death. Judgment below was affirmed in a one-line opinion.</li>
+        <li><strong>Friedrichs v. CA Teachers Assn</strong>. In this First Amendment case, the Court was equally divided and so Judgment below was affirmed in a one-line opinion. <a class="external" href="https://www.courtlistener.com/opinion/109661/abood-v-detroit-bd-of-ed/">Abood</a>a> was therefore left intact</li>
+        <li><strong>Dollar General v. Mississippi Band of Choctow Indians</strong>. In this Tribal Jurisdiction case, the Court was equally divided and so Judgment below was affirmed in a one-line opinion.</li>
+        <li><strong>United States v. Texas</strong>. In this case concerning President Obama's DAPA program, the Court was equally divided and so Judgment below was affirmed in a one-line opinion. </li>
+    </ul>
+    </p>
+
+	<a name="NetworkTerms"></a>
+	<h3>Network Terminology</h3>
+	<p>
+		<ul>
+			<li>Supreme Court citation networks show the citation connections between two Court cases. Every network connects two cases, the <strong>2015 Term Case</strong> and the <strong>Network Anchor Case</strong>.</li>
+			<li>The <strong>Network Age</strong> expresses the amount of time (in years) between the time the Anchor Case was decided and when the 2015 Term Case was decided.</li>
+		  	<li>The <strong>"D"</strong> in <strong>"3D"</strong> and <strong>"2D"</strong> stands for "degree of connection." Since the 2015 Term Case always cites the Network Anchor Case, those cases are 1-degree connected.</li> 
+		  	<li>The <strong>2D cases</strong> column gives the number of 2-degree connections that exist between the 2015 Term Case and the Network Anchor Case - that is, how many cases exist in the network that are cited by the 2015 Term Case AND in turn cite the Network Anchor. For example, Case X would be a 2D case if the 2015 Term Case cited Case X and Case X in turn cited the Network Anchor Case. Please note that the 2D case number includes the two 1D cases (2015 Term Case + Network Anchor).</li>
+		  	<li>The <strong>3D cases</strong> column gives the number of 3-degree connections that exist between the 2015 Term Case and the Network Anchor Case. 3D cases are those that are cited by a 2D case AND in turn cite the Network Anchor. Thus, Case Y would be a 3D case if Case X above Cited Y, which in turn cited the Network Anchor Case. Please note that the 3D case number includes the all the 2D+1D cases.</li>
+		  	<li><strong>DOD</strong> stands for "Degree of Dissent". The DOD of an individual case is calculated based on its vote for outcome, as specified by<a class="external" href="http://scdb.wustl.edu/documentation.php?var=majVotes"> the Supreme Court Database (Spaeth)</a>. Since a 5-4 decision is the maximum amount of dissent possible in a SCOTUS case, it has a DOD of 1.0. Conversely, a 9-0 case has a DOD of 0. This means that an 8-1 decision has a 0.25 DOD, a 7-2 has a 0.50 DOD, and a 6-3 has a 0.75 DOD. To calculate DOD, the number of dissents is multiplied by 0.25 (thus a 6-2 case would still have a 0.50 DOD).</li>
+		  	<li><strong>2D DOD</strong> is the average DOD for all the 2D cases. </li>
+		  	<li><strong>3D DOD</strong> is the average DOD for all the 3D cases. </li>
+		  	<li><strong>tb</strong> stands for "too big" and appears when a 3D network contains more than 70 cases. See <a href="#Method">Method</a> below for further explanation.
+			<li><a href="#Introduction">RETURN TO TOP</a></li>
+		</ul>
+	</p>
+
+
+	<a name="Method"></a>
+	<h3>Method</h3>
+	<p>
+		Each network was created by the researcher using the <a class="external" href="https://courtlistener.com:81/visualizations/scotus-mapper/">free tool on CourtListener</a>. Choice of the Network Anchor Case was based on a reading of the opinion and SCOTUSBlog's Every. The textual justification for the Network Anchor Case choice is provided in the visualization's "Description" field. Once an Anchor Case is chosen, the citation networks are generated automatically by the software.
+	</p>
+	<p>
+		<strong>Limitations</strong>. Spaeth codes are not yet available for 2015 Term cases - they should become available in July or August 2016. All maps will be updated then. Please note that the Degree of Dissent (DOD) calculations do not include the 2015 Term case. In addition, the tool only recognizes pre-2015 Term cases for which there is a Supreme Court Database (Spaeth) ID number. Since <a class="external" href="http://scdb.wustl.edu/data.php">Spaeth does not cover pre-1946 Term cases</a>, the tool cannot create networks to cases decided before 1946. In addition, the Supreme Court Database has not yet coded current Term cases and so these are displayed in Spaeth view as "unk" (unknown). Finally,since citations between cases are all parsed by computer, the tool does experience occasional data errors.  
+	</p>
+		
+
+	<a name="Collaborate"></a>
+	<h3>Contact</h3>
+	<p>
+		This collection of 2015 Term cases was created as part of the <a class="external" href="http://law.ubalt.edu/faculty/scotus-mapping/index.cfm">Supreme Court Mapping Project</a>. We welcome feedback and will link <a class="external" href="https://courtlistener.com:81/visualizations/scotus-mapper/">networks you create on CourtListener</a> to visualizations presented in this table. Reach us by <a href="mailto:cstarger@ubalt.edu?subject=2015%20Term%20Contact">email.</a>
+	</p>
+	<p class="text-center">
+		<a href="#Introduction">RETURN TO TOP</a></li>
+	</p>
+
+
+
+
+</div>
+
+</body>
+</html>
+
